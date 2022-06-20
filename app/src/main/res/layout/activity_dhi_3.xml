@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dhi3VM" type="com.amitsapplication.app.modules.dhi3.data.viewmodel.Dhi3VM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGroup115"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameGroup111"
+                android:layout_height="@dimen/_1051pxv" android:layout_width="match_parent">
+                <FrameLayout android:id="@+id/frameGroup113"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_1051pxv" android:layout_width="match_parent">
+                    <ImageView android:id="@+id/imageRectangle345"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_307pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_rectangle345}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle345"/>
+                    <LinearLayout android:id="@+id/linearGroup107"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_154pxv"
+                        android:layout_marginTop="@dimen/_154pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStylewhite_1">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPhotos"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_668pxv"
+                            android:layout_marginStart="@dimen/_45pxh"
+                            android:layout_marginTop="@dimen/_38pxv"
+                            android:layout_weight="0.51"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{dhi3VM.dhi3Model.txtPhotos}"
+                            style="@style/txtPoppinssemibold24" tools:text="@string/lbl_photos"/>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/btnShare"
+                            android:layout_height="@dimen/_43pxv"
+                            android:layout_marginBottom="@dimen/_665pxv"
+                            android:layout_marginEnd="@dimen/_45pxh"
+                            android:layout_marginStart="@dimen/_158pxh"
+                            android:layout_marginTop="@dimen/_34pxv"
+                            android:layout_width="@dimen/_82pxh"
+                            android:paddingBottom="@dimen/_9pxv"
+                            android:paddingEnd="@dimen/_17pxh"
+                            android:paddingStart="@dimen/_18pxh"
+                            android:paddingTop="@dimen/_10pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_share"
+                            android:textAllCaps="false"
+                            style="@style/btnSolidRounded_1" tools:text="@string/lbl_share"/>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerGroup31"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_43pxh"
+                        android:layout_marginStart="@dimen/_43pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                        app:spanCount="2" itemSpace="@{@dimen/_24pxh}"
+                        tools:itemCount="7" tools:listitem="@layout/row_group31"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameRectangle328"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_43pxv"
+                    android:layout_marginBottom="@dimen/_56pxv"
+                    android:layout_marginEnd="@dimen/_46pxh"
+                    android:layout_marginStart="@dimen/_46pxh"
+                    android:layout_marginTop="@dimen/_56pxv"
+                    android:layout_width="@dimen/_43pxh" style="@style/groupStylecornerRadius">
+                    <ImageView android:id="@+id/imageGroup97"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_24pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginEnd="@dimen/_9pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_24pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_group97_1"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_group97_1"/>
+                </FrameLayout>
+            </FrameLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>
